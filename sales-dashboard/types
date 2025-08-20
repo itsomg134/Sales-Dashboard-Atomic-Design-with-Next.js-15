@@ -1,0 +1,12 @@
+// types/sales.ts
+export interface MonthlySales {
+  month: string;
+  sales: number;
+}
+
+export interface SalesData {
+  year: number;
+  data: MonthlySales[];
+}
+
+export type ChartType = 'bar' | 'line' | 'pie';
